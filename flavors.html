@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors - Elara's Kitchen</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f5;
+        }
+
+        header {
+            background-color: #804E74;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px 0;
+            color: #804E74;
+        }
+
+        .flavors-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+            padding: 0 20px;
+        }
+
+        .flavor-card {
+            background-color: #fff2ee;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .flavor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .flavor-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .flavor-card h3 {
+            margin: 15px 0 10px 0;
+            color: #7b5572;
+        }
+
+        .flavor-card p {
+            padding: 0 15px 15px 15px;
+            color: #0c0c0c;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #744068;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>Elara's Kitchen</header>
+
+    <h2>Our Delicious Flavors</h2>
+
+    <div class="flavors-container">
+        <div class="flavor-card" >
+            <img src="vanilla.avif" alt="Vanilla">
+            <h3>Vanilla</h3>
+            <p>A classic, smooth, and creamy flavor loved by everyone.</p>
+        </div>
+
+        <div class="flavor-card">
+            <img src="chocolates.avif" alt="Chocolate">
+            <h3>Chocolate</h3>
+            <p>Rich, decadent chocolate flavor that melts in your mouth.</p>
+        </div>
+
+        <div class="flavor-card">
+            <img src="strawberry.avif" alt="Strawberry">
+            <h3>Strawberry</h3>
+            <p>Sweet and fruity strawberry flavor, fresh and delightful.</p>
+        </div>
+
+        <div class="flavor-card">
+            <img src="oreo.avif" alt="Oreo">
+            <h3>Oreo</h3>
+            <p>Creamy vanilla with crunchy chocolate cookie pieces.</p>
+        </div>
+
+        <div class="flavor-card">
+            <img src="mango.avif" alt="Mango">
+            <h3>Mango</h3>
+            <p>Juicy and tropical mango flavor, perfect for summer.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Elara's Kitchen. All Rights Reserved.
+    </footer>
+</body>
+</html>
